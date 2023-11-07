@@ -1,10 +1,26 @@
 <?php
 
-$animalNom = "Gribouille";
-$animalAge = 1;
+// Classes
 
-function presentation (string $nom, int $age) {
-    echo sprintf("Bonjour, je suis %s, j'ai %d an(s)", $nom, $age);
+// Modèle sur lequel on va se baser afin d'instancier des objets
+
+class Chat {
+    
+    public string $nom;
+    
+    public int $age;
+
+    public ?string $race = null;
+
+    public function miaou(): void 
+    {
+        echo "Miaou" ;
+    }
 }
 
-presentation($animalNom, $animalAge);
+
+
+$chat = new Chat();
+
+
+
