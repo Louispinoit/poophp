@@ -7,6 +7,11 @@
 // Appeler un attribut => $objet->attribut
 // Appeler une méthode => $objet->methode()
 
+// Modificateur de visibilité
+// 1 - public
+// 2 - private (modifier / acceder un attribut uniquement depuis la classe.)
+// 3 - protected (permet de modifier / acceder depuis la classe et classe enfant. )
+
 class Chat {
     
     public string $nom;
